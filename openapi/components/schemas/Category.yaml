@@ -15,4 +15,4 @@ properties:
     maxLength: 128
     minLength: 1
   categoryType:
-    $ref: './CategoryType.yaml'
+    $ref: '../schemas/CategoryType.yaml'

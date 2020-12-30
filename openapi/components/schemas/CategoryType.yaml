@@ -5,8 +5,8 @@ properties:
   categoryType:
     description: Тип категории
     type: array
-      items:
-        type: string
-        enum:
-          - test
-          - live
+    items:
+      type: string
+      enum:
+        - test
+        - live
