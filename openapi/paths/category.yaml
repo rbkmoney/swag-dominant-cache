@@ -1,0 +1,20 @@
+get:
+  summary: Получить категорию по Ref_Id
+  tags:
+    - category
+  operationId: getCategory
+  parameters:
+    - $ref: '../components/parameters/categoryRef.yaml'
+  responses:
+    '200':
+      description: Категория найдена
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/Category.yaml'
+    '400':
+      $ref: '../components/responses/DefaultLogicError.yaml'
+    '401':
+      description: Ошибка авторизации
+    '404':
+      description: Заданный ресурс не найден

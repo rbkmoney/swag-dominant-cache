@@ -1,0 +1,25 @@
+openapi: 3.0.3
+info:
+  version: 1.0.0
+  title: RBKmoney Dominant Cache API
+  description: >
+    ## Описание
+
+    RBKmoney Dominant Cache API.
+
+  termsOfService: 'https://rbk.money/'
+  contact:
+    name: RBKmoney support team
+    email: support@rbk.money
+    url: 'https://developer.rbk.money'
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+paths:
+  /category:
+    $ref: ./paths/category.yaml
+tags:
+  - name: category
+    x-displayName: Категории
+servers:
+  - url: 'https://api.rbk.money/v1/dominant/cache'
