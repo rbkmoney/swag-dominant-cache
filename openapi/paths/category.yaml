@@ -1,17 +1,22 @@
 get:
-  summary: Получить категорию по Ref_Id
+  summary: Получить список категорий
   tags:
     - category
   operationId: getCategory
-  parameters:
-    - $ref: '../components/parameters/categoryRef.yaml'
   responses:
     '200':
-      description: Категория найдена
+      description: Список категорий
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/Category.yaml'
+            type: object
+            required:
+              - results
+            properties:
+              results:
+                type: array
+                items:
+                  $ref: '../components/schemas/Category.yaml'
     '400':
       $ref: '../components/responses/DefaultLogicError.yaml'
     '401':
