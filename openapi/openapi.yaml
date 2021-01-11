@@ -18,8 +18,12 @@ info:
 paths:
   /category:
     $ref: ./paths/category.yaml
+  /сashRegisterProvider:
+    $ref: ./paths/сashRegisterProvider.yaml
 tags:
   - name: category
     x-displayName: Категории
+  - name: сashRegisterProvider
+    x-displayName: Провайдеры чеков
 servers:
   - url: 'https://api.rbk.money/v1/dominant/cache'

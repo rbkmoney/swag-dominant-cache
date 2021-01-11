@@ -1,0 +1,29 @@
+type: object
+required:
+  - id
+  - description
+  - type
+  - isRequired
+properties:
+  id:
+    description: Идентификатор параметра провайдера
+    type: string
+    maxLength: 40
+    minLength: 1
+  description:
+    description: Описание параметра провайдера
+    type: string
+    maxLength: 40
+    minLength: 1
+  type:
+    description: Тип параметра
+    type: array
+    items:
+      type: string
+      enum:
+        - stringType
+        - integerType
+        - urlType
+        - passwordType
+  isRequired:
+    type: boolean

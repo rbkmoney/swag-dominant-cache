@@ -1,0 +1,30 @@
+type: object
+required:
+  - сashRegisterProviderRef
+  - name
+  - description
+  - providerParameter
+  - proxy
+properties:
+  categoryRef:
+    description: Идентификатор провайдера
+    type: string
+    maxLength: 40
+    minLength: 1
+  name:
+    description: Название провайдера
+    type: string
+    maxLength: 40
+    minLength: 1
+  description:
+    description: Описание провайдера
+    type: string
+    maxLength: 128
+    minLength: 1
+  providerParameter:
+    description: Параметры провайдера
+    type: array
+    items:
+      $ref: '../components/schemas/ProviderParameter.yaml'
+  proxy:
+    $ref: '../components/schemas/Proxy.yaml'
