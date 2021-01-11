@@ -16,14 +16,18 @@ info:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 paths:
-  /category:
-    $ref: ./paths/category.yaml
-  /сashRegisterProvider:
-    $ref: ./paths/сashRegisterProvider.yaml
+  /categories:
+    $ref: ./paths/categories.yaml
+  /сashRegisterProviders:
+    $ref: ./paths/сashRegisterProviders.yaml
+  /documentTypes:
+    $ref: ./paths/documentTypes.yaml
 tags:
-  - name: category
+  - name: categories
     x-displayName: Категории
-  - name: сashRegisterProvider
+  - name: сashRegisterProviders
     x-displayName: Провайдеры чеков
+  - name: documentTypes
+    x-displayName: Типы документа
 servers:
   - url: 'https://api.rbk.money/v1/dominant/cache'

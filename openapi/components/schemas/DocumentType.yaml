@@ -1,0 +1,21 @@
+type: object
+required:
+  - documentTypeRef
+  - name
+  - description
+properties:
+  documentTypeRef:
+    description: Идентификатор типа документа
+    type: string
+    maxLength: 40
+    minLength: 1
+  name:
+    description: Название типа документа
+    type: string
+    maxLength: 40
+    minLength: 1
+  description:
+    description: Описание типа документа
+    type: string
+    maxLength: 128
+    minLength: 1

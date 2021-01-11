@@ -1,11 +1,11 @@
 get:
-  summary: Получить список провайдеров чеков
+  summary: Получить список категорий
   tags:
-    - сashRegisterProvider
-  operationId: getCashRegisterProvider
+    - categories
+  operationId: getCategories
   responses:
     '200':
-      description: Список провайдеров
+      description: Список категорий
       content:
         application/json:
           schema:
@@ -16,7 +16,7 @@ get:
               results:
                 type: array
                 items:
-                  $ref: '../components/schemas/CashRegisterProvider.yaml'
+                  $ref: '../components/schemas/Category.yaml'
     '400':
       $ref: '../components/responses/DefaultLogicError.yaml'
     '401':
