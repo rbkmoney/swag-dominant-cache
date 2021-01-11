@@ -25,6 +25,6 @@ properties:
     description: Параметры провайдера
     type: array
     items:
-      $ref: '../components/schemas/ProviderParameter.yaml'
+      $ref: '../schemas/ProviderParameter.yaml'
   proxy:
-    $ref: '../components/schemas/Proxy.yaml'
+    $ref: '../schemas/Proxy.yaml'
