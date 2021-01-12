@@ -1,0 +1,15 @@
+type: object
+required:
+  - proxyRef
+  - proxyOptions
+properties:
+  proxyRef:
+    description: Идентификатор провайдера
+    type: string
+    maxLength: 40
+    minLength: 1
+  proxyOptions:
+    description: Параметры провайдера
+    type: object
+    additionalProperties:
+      type: string

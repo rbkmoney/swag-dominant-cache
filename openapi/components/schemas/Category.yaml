@@ -1,0 +1,24 @@
+type: object
+required:
+  - categoryRef
+  - name
+  - description
+  - categoryType
+properties:
+  categoryRef:
+    description: Идентификатор категории
+    type: string
+    maxLength: 40
+    minLength: 1
+  name:
+    description: Название категории
+    type: string
+    maxLength: 40
+    minLength: 1
+  description:
+    description: Описание категории
+    type: string
+    maxLength: 128
+    minLength: 1
+  categoryType:
+    $ref: '../schemas/CategoryType.yaml'

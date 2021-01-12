@@ -1,0 +1,12 @@
+type: object
+required:
+  - categoryType
+properties:
+  categoryType:
+    description: Тип категории
+    type: array
+    items:
+      type: string
+      enum:
+        - test
+        - live

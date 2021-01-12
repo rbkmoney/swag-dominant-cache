@@ -1,0 +1,25 @@
+get:
+  summary: Получить список провайдеров чеков
+  tags:
+    - сashRegisterProviders
+  operationId: getCashRegisterProviders
+  responses:
+    '200':
+      description: Список провайдеров
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - results
+            properties:
+              results:
+                type: array
+                items:
+                  $ref: '../components/schemas/CashRegisterProvider.yaml'
+    '400':
+      $ref: '../components/responses/DefaultLogicError.yaml'
+    '401':
+      description: Ошибка авторизации
+    '404':
+      description: Заданный ресурс не найден
