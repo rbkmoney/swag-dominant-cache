@@ -21,7 +21,7 @@ properties:
     maxLength: 128
     minLength: 1
   termSetHierarchyRef:
-    description: Идентификатор связанного с шаблоном контакта набора условий
+    description: Идентификатор связанного с шаблоном контракта набора условий
     type: string
     maxLength: 40
     minLength: 1
