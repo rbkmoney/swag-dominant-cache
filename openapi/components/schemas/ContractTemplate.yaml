@@ -1,0 +1,27 @@
+type: object
+required:
+  - contractTemplateRef
+  - name
+  - description
+  - termSetHierarchyRef
+properties:
+  contractTemplateRef:
+    description: Идентификатор шаблона контракта
+    type: string
+    maxLength: 40
+    minLength: 1
+  name:
+    description: Название шаблона контракта
+    type: string
+    maxLength: 40
+    minLength: 1
+  description:
+    description: Описание шаблона контракта
+    type: string
+    maxLength: 128
+    minLength: 1
+  termSetHierarchyRef:
+    description: Идентификатор связанного с шаблоном контакта набора условий
+    type: string
+    maxLength: 40
+    minLength: 1
